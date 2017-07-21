@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
     public float speed;
     private Rigidbody rb;
 
-    Void Start ()
+    void Start ()
     {
         rb = GetComponent<Rigidbody>();        
     }
@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour {
 
         Vector3 moverment = new Vector3(MoveHorizontal, 0.0f, MoveVertical);
 
-        rb.AddForce(moverment * speed)
+        rb.AddForce(moverment * speed);
     }
 
 
